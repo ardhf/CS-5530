@@ -1,0 +1,11 @@
+       Column  T-statistic  P-value
+       Height    -0.624233 0.550027
+       Weight    -2.196463 0.073097
+          Age     0.237871 0.819176
+Grip strength     1.635000 0.141573
+
+The above results are from the t-tests performed on the data. Since none of the t-statistics are 0, it 
+shows that there is some relationship between the data and the frailty attribute in women. However, the
+P-values for each column are not within 0.05 which would prove statistical significance. Therefore, the data 
+given does not prove to be statisticly significant towards determining the frailty in females. These results
+may change with the addition of more data, but with the limited data here, there seems to be no correlation.

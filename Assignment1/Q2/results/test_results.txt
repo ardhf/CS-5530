@@ -1,1 +1,17 @@
 Based on the pngs generated from the data analysis, we can assume a few things about the correlation of data.
+
+The average scores by gender shows us a few things. We can see from the data that the average score of males in math is 6% higher on average than
+the females. We can also see that the females tend to score higher in reading and writing with an increase of roughly 10-12% in each subject.
+
+The average scores by lunch type is also pretty interesting. From the graphics we can see that those with free/reduced lunch tend to have lower
+scores than those with standard lunches. The scores tend to increase by 6-12% in each category.
+
+The math score by parents level of education box plot shows some interesting data. This graphic shows that although the averages tend to be similar,
+with the students who have parents with a master's degree performing slightly better, the outliers are worse. We can see that there are less outliers
+as the parents education increases. The students who have parents with some college or less have more negative outliers.
+
+The percent of ethicity/race groups that completed the test prep show that the average among the groups are pretty similar. The average of groups A, B,
+and C are all pretty close to 35%, whereas group D is slightly lower at 31% and group E is slightly higher at 43%.
+
+The test prep impact box plots show that the range of scores tend to be shifted up when the students take the prep course. This is shown through all of
+the subjects. The ones who complete the test prep are also less likely to have lower score outliers.

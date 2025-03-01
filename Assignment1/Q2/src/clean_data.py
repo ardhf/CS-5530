@@ -2,7 +2,7 @@ import pandas as pd
 
 # This file will take in the raw_data.csv and clean it to ensure all rows are complete.
 # Read the file from csv
-df = pd.read_csv('Q2/data_raw/raw_students_performance.csv')
+df = pd.read_csv('Assignment1/Q2/data_raw/raw_students_performance.csv')
 
 # Verify the data was imported correctly
 print(f'\nOriginal Data\n{df.head()}')
@@ -17,4 +17,4 @@ df = df.dropna()
 print(f'\nClean Data\n{df.head()}')
 
 # Exporting the cleaned data to the clean data folder without the row index
-df.to_csv('Q2/data_clean/clean_students_performance.csv', index=False)
+df.to_csv('Assignment1/Q2/data_clean/clean_students_performance.csv', index=False)

@@ -1,0 +1,386 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
+        "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "adverse_drug",
+      "patterns": [
+        "How to check Adverse drug reaction?",
+        "Open adverse drugs module",
+        "Give me a list of drugs causing adverse behavior",
+        "List all drugs suitable for patient with adverse reaction",
+        "Which drugs dont have adverse reaction?"
+      ],
+      "responses": [
+        "Navigating to Adverse drug reaction module"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Open blood pressure module",
+        "Task related to blood pressure",
+        "Blood pressure data entry",
+        "I want to log blood pressure results",
+        "Blood pressure data management"
+      ],
+      "responses": [
+        "Navigating to Blood Pressure module"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "blood_pressure_search",
+      "patterns": [
+        "I want to search for blood pressure result history",
+        "Blood pressure for patient",
+        "Load patient blood pressure result",
+        "Show blood pressure results for patient",
+        "Find blood pressure results by ID"
+      ],
+      "responses": [
+        "Please provide Patient ID",
+        "Patient ID?"
+      ],
+      "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [
+        "Find me a pharmacy",
+        "Find pharmacy",
+        "List of pharmacies nearby",
+        "Locate pharmacy",
+        "Search pharmacy"
+      ],
+      "responses": [
+        "Please provide pharmacy name"
+      ],
+      "context": ["search_pharmacy_by_name"]
+    },
+    {
+      "tag": "hospital_search",
+      "patterns": [
+        "Lookup for hospital",
+        "Searching for hospital to transfer patient",
+        "I want to search hospital data",
+        "Hospital lookup for patient",
+        "Looking up hospital details"
+      ],
+      "responses": [
+        "Please provide hospital name or location"
+      ],
+      "context": ["search_hospital_by_params"]
+    },
+    {
+      "tag": "search_hospital_by_params",
+      "patterns": [],
+      "responses": [
+        "Please provide hospital type"
+      ],
+      "context": ["search_hospital_by_type"]
+    },
+    {
+      "tag": "appointment_booking",
+      "patterns": [
+        "I need to book an appointment",
+        "Schedule an appointment",
+        "Book appointment",
+        "I'd like to see a doctor",
+        "Can I make an appointment?"
+      ],
+      "responses": [
+        "Sure, I can help with that. Please provide your preferred date and time.",
+        "Booking appointment: please provide your preferred date and time."
+      ],
+      "context": ["appointment_details"]
+    },
+    {
+      "tag": "appointment_status",
+      "patterns": [
+        "Check my appointment status",
+        "What's the status of my appointment?",
+        "Did my appointment get confirmed?",
+        "Appointment update",
+        "Can you check my appointment?"
+      ],
+      "responses": [
+        "Please provide your appointment number.",
+        "Can you share your appointment ID for status check?"
+      ],
+      "context": ["appointment_check"]
+    },
+    {
+      "tag": "medical_info",
+      "patterns": [
+        "Tell me about drug side effects",
+        "What are the side effects of this drug?",
+        "Give me information on side effects",
+        "What should I know about this medicine?",
+        "Any warnings associated with this medication?"
+      ],
+      "responses": [
+        "You can refer to the detailed drug information module for that.",
+        "Please check the drug information section for detailed side effects."
+      ],
+      "context": ["drug_information"]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "I need help",
+        "Support please",
+        "Customer support",
+        "I want to speak to a representative",
+        "Help me out"
+      ],
+      "responses": [
+        "Connecting you to our support team.",
+        "Redirecting you to the support department."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "billing",
+      "patterns": [
+        "I have a billing question",
+        "Need help with my bill",
+        "Can you provide billing details?",
+        "I want to check my billing",
+        "How do I get billing info?"
+      ],
+      "responses": [
+        "I can help with billing inquiries. Please provide your customer ID.",
+        "Let me fetch the billing details. Can you share your billing ID?"
+      ],
+      "context": ["billing_query"]
+    },
+    {
+      "tag": "lab_test_booking",
+      "patterns": [
+        "I need to schedule a lab test",
+        "Book lab test",
+        "Schedule lab test appointment",
+        "I want to take a lab test",
+        "Lab test booking"
+      ],
+      "responses": [
+        "Please provide the test type and your preferred date.",
+        "To schedule a lab test, please share the test type and when you'd like to take it."
+      ],
+      "context": ["lab_test_details"]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I want to give feedback",
+        "Can I leave a review?",
+        "Feedback",
+        "I want to share my experience",
+        "I'd like to comment on this service"
+      ],
+      "responses": [
+        "Please provide your feedback.",
+        "We appreciate your input. Please share your thoughts."
+      ],
+      "context": ["collect_feedback"]
+    },
+    {
+      "tag": "search_blood_pressure_by_patient_id",
+      "patterns": [
+        "Patient ID is 12345",
+        "Use ID 56789",
+        "Here's the patient ID: 00123",
+        "The ID is ABC123",
+        "Patient identifier is 78910"
+      ],
+      "responses": [
+        "Loading blood pressure history for the provided ID.",
+        "Fetching results for the patient."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [
+        "Pharmacy name is Central Meds",
+        "Find Walgreens",
+        "Search for CVS Pharmacy",
+        "It's called HealthPlus",
+        "The pharmacy name is Rite Aid"
+      ],
+      "responses": [
+        "Here are the details for the pharmacy you requested.",
+        "Displaying pharmacy information."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "search_hospital_by_type",
+      "patterns": [
+        "General hospital",
+        "Specialty hospital",
+        "Maternity hospital",
+        "Trauma center",
+        "Children's hospital"
+      ],
+      "responses": [
+        "Searching hospitals by type...",
+        "Here are the hospitals that match your criteria."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "appointment_details",
+      "patterns": [
+        "Next Monday at 10 AM",
+        "Tomorrow afternoon",
+        "Any time next week",
+        "April 25th, 2 PM",
+        "I prefer mornings"
+      ],
+      "responses": [
+        "Appointment scheduled successfully.",
+        "Got it! Your appointment has been booked."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "appointment_check",
+      "patterns": [
+        "My appointment number is 4567",
+        "It's appointment ID 7890",
+        "The ID is APPT1234",
+        "Here is my appointment number: 20230415",
+        "Check status for ID 3333"
+      ],
+      "responses": [
+        "Here is your appointment status.",
+        "Status found and displayed."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "drug_information",
+      "patterns": [
+        "Drug name is Ibuprofen",
+        "Tell me about Amoxicillin",
+        "It's Paracetamol",
+        "Give details on Metformin",
+        "Information on Atorvastatin"
+      ],
+      "responses": [
+        "Here is the information for the drug.",
+        "Fetching side effects and details now."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "billing_query",
+      "patterns": [
+        "Customer ID is 112233",
+        "My billing ID is BILL456",
+        "Check for ID 7890",
+        "The ID is 000111",
+        "Look it up with billing code ABC123"
+      ],
+      "responses": [
+        "Retrieving billing information.",
+        "Here is your billing detail."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "lab_test_details",
+      "patterns": [
+        "Blood test on Friday",
+        "COVID test tomorrow morning",
+        "X-ray next Monday",
+        "Urine test on 25th",
+        "Schedule cholesterol test next week"
+      ],
+      "responses": [
+        "Lab test booked successfully.",
+        "Confirmed. Your lab test has been scheduled."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "collect_feedback",
+      "patterns": [
+        "Your service was excellent",
+        "I faced some issues",
+        "It was okay, not great",
+        "I loved the experience",
+        "Could be better"
+      ],
+      "responses": [
+        "Thanks for your feedback! We'll use it to improve.",
+        "Your input is valuable to us."
+      ],
+      "context": [""]
+    }    
+  ]
+}

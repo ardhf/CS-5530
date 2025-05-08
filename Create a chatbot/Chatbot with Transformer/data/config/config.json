@@ -1,0 +1,1 @@
+{"seq_length": 128, "batch_size": 16, "learning_rate": 0.001, "device": "cuda", "vocab_size": 48293, "pad_token": "<pad>", "unk_token": "<unk>"}

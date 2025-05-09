@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "tag": "confirm_followup_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "scheduling_followup"
+      ]
+    },
+    {
+      "tag": "reschedule_appointment_start",
+      "patterns": [],
+      "responses": [],
+      "context": "reschedule_appt",
+      "required_context": []
+    },
+    {
+      "tag": "provide_old_appointment_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    },
+    {
+      "tag": "provide_new_time_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    },
+    {
+      "tag": "confirm_reschedule_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "intents": [
+    {
+      "tag": "provide_complaint_details",
+      "patterns": [
+        "The nurse on duty was very rude to me yesterday.",
+        "I waited over three hours before anyone saw me.",
+        "The food I received was cold and undercooked.",
+        "Billing charged me twice for the same service.",
+        "The restroom near ICU was filthy all day.",
+        "Staff ignored my call light several times.",
+        "My medication was almost two hours late.",
+        "The security guard spoke to me disrespectfully.",
+        "I was given incorrect discharge instructions.",
+        "No one informed me about my test delays.",
+        "Housekeeping skipped my room cleaning.",
+        "The MRI tech was unprofessional.",
+        "I wasn\u2019t offered an interpreter as promised.",
+        "I received the wrong meal despite my allergy.",
+        "The doctor didn\u2019t explain the procedure clearly.",
+        "The room temperature is unbearable.",
+        "Visitors were loud late at night in the hallway.",
+        "My confidential info was discussed openly.",
+        "Wheelchair assistance never arrived.",
+        "Parking attendant was hostile.",
+        "The IV line was inserted painfully.",
+        "I found insects in the patient lounge.",
+        "Nurse didn't sanitize before touching me.",
+        "My personal items were misplaced by staff.",
+        "The follow\u2011up appointment was double\u2011booked.",
+        "Pharmacy lost my prescription.",
+        "I was billed for services I didn\u2019t receive.",
+        "Staff laughed at my concerns.",
+        "No one updated me about my family member.",
+        "The call bell is broken in my room."
+      ],
+      "responses": [
+        "Thank you for sharing those details. I\u2019ve documented your concern and will forward it to Patient Relations for review.",
+        "I\u2019m sorry that happened. Your report has been recorded and escalated to the appropriate department.",
+        "We appreciate you letting us know. I\u2019ve logged your complaint and a representative will follow up with you shortly.",
+        "Your feedback is important. The issue has been filed and our quality team will investigate.",
+        "I understand. Your complaint is now on record; you should expect a response within 2\u202fbusiness days.",
+        "Thank you for providing specifics. I\u2019ve submitted your concern to management to address promptly."
+      ],
+      "context": "",
+      "required_context": [
+        "complaint_report"
+      ]
+    },
+    {
+      "tag": "confirm_complaint_submission",
+      "patterns": [
+        "Yes, that covers everything.",
+        "Thank you, that's all.",
+        "I have nothing else to add.",
+        "That\u2019s correct, thanks.",
+        "Okay, please proceed.",
+        "Yes, please submit it.",
+        "Sounds good.",
+        "All set, thank you.",
+        "Yes, that\u2019s fine.",
+        "Great, thanks for helping.",
+        "Please file it as stated.",
+        "I confirm that information.",
+        "Looks accurate, thanks.",
+        "Okay, submit my complaint.",
+        "Yes, I appreciate it."
+      ],
+      "responses": [
+        "Your complaint has been filed. Thank you for bringing this to our attention.",
+        "Submission confirmed. Patient Relations will contact you if they need further details.",
+        "All set\u2014your report is in our system. We value your feedback.",
+        "Your concern has been logged successfully. Let us know if anything else arises.",
+        "Thank you. The complaint is now officially recorded and under review.",
+        "Done. We appreciate you taking the time to provide feedback."
+      ],
+      "context": "",
+      "required_context": [
+        "complaint_report"
+      ]
+    },
+    {
+      "tag": "parking_validation_start",
+      "patterns": [
+        "How do I get my parking validated?",
+        "I need parking validation.",
+        "Can you validate my parking ticket?",
+        "Where do I go for parking validation?",
+        "I have a parking stub to validate.",
+        "Can you stamp my parking ticket?",
+        "I was told visitors get free parking\u2014how?",
+        "Need validation for Garage A ticket.",
+        "Please help me with parking validation.",
+        "Where\u2019s the parking validation desk?",
+        "Do outpatients receive parking validation?",
+        "Can someone validate my ticket here?",
+        "I need discounted parking.",
+        "How can I get my parking pass validated?",
+        "Visitor parking validation request.",
+        "Is there free parking for patients?",
+        "Validate my parking, please.",
+        "I'm here for surgery\u2014parking validation?",
+        "Where can I get the ticket scanned?",
+        "Can you process parking validation?"
+      ],
+      "responses": [
+        "Certainly. Could you provide your parking ticket number?",
+        "Sure\u2014let\u2019s start with the ticket number printed on your stub.",
+        "Happy to help. What\u2019s the parking ticket number?",
+        "Of course. Please read me the number on your parking ticket.",
+        "No problem. I\u2019ll need the ticket number to validate it.",
+        "Absolutely. Could you share the ticket ID from your parking pass?"
+      ],
+      "context": "parking_validation",
+      "required_context": []
+    },
+    {
+      "tag": "provide_parking_ticket_number",
+      "patterns": [
+        "Ticket number 123456.",
+        "It's 987654321.",
+        "My stub says 450089.",
+        "ID 778899.",
+        "Number 00112233.",
+        "Ticket 565656.",
+        "The number is 909090.",
+        "It reads 314159.",
+        "Code 246801.",
+        "Ticket #777888.",
+        "Parking pass 600700.",
+        "Stub number 54321.",
+        "Ticket 135790.",
+        "ID: 222333.",
+        "Number on ticket is 888777.",
+        "It's 4590.",
+        "005500 is my ticket.",
+        "Ticket code 43210.",
+        "I have 919191.",
+        "730730 ticket number."
+      ],
+      "responses": [
+        "Thank you. Your ticket {ticket_number} has been validated\u2014use any pay kiosk within 30\u202fminutes.",
+        "Got it. Validation complete for ticket {ticket_number}. You now have free exit.",
+        "Ticket {ticket_number} is validated. Please exit within the next hour to avoid charges.",
+        "Validation successful. Present ticket {ticket_number} at the gate; balance is now zero.",
+        "Your parking pass {ticket_number} has been updated\u2014no payment required on exit.",
+        "Done. Ticket {ticket_number} shows full validation. Safe travels!"
+      ],
+      "context": "",
+      "required_context": [
+        "parking_validation"
+      ]
+    },
+    {
+      "tag": "confirm_parking_validation",
+      "patterns": [
+        "Great, thanks.",
+        "Perfect, thank you.",
+        "Awesome, appreciate it.",
+        "Okay, thanks for your help.",
+        "Sounds good.",
+        "Thanks a lot.",
+        "Thank you!",
+        "All set, thanks.",
+        "That\u2019s helpful, thanks.",
+        "Great, appreciate the validation."
+      ],
+      "responses": [
+        "You\u2019re welcome. Have a safe drive home!",
+        "Glad to help. Enjoy the rest of your day.",
+        "Anytime\u2014feel free to reach out if you need more assistance.",
+        "Happy to assist. Take care!",
+        "No problem. Let us know if there\u2019s anything else you need.",
+        "You're all set. Thank you for visiting."
+      ],
+      "context": "",
+      "required_context": [
+        "parking_validation"
+      ]
+    }
+  ]
+}

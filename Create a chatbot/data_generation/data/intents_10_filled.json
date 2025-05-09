@@ -1,0 +1,180 @@
+{
+  "intents": [
+    {
+      "tag": "prescription_refill_start",
+      "patterns": [
+        "I need a prescription refill.",
+        "Can I get my meds refilled?",
+        "I'd like to renew my prescription.",
+        "Need a refill on my medication.",
+        "Can you help me refill my script?",
+        "I\u2019m out of pills\u2014need a refill.",
+        "Refill request, please.",
+        "How do I get my prescription renewed?",
+        "I need more of my medicine.",
+        "Please start my refill.",
+        "Can you process a medication refill for me?",
+        "I'd like to order another month of meds.",
+        "Running low on meds\u2014need a refill.",
+        "Refill my prescription, please.",
+        "I want to renew my Rx.",
+        "Can I request a prescription refill now?",
+        "Need to top up my medication.",
+        "Can you set up my refill?",
+        "Time for a refill on my meds.",
+        "I'd like to request a renewal."
+      ],
+      "responses": [
+        "Certainly. Which medication would you like to refill?",
+        "Of course. Please provide the name of the prescription you need refilled.",
+        "Sure thing\u2014what medication do you want to renew?",
+        "Happy to help. Which prescription should we refill today?",
+        "Absolutely. Let me know the medication name so I can proceed.",
+        "No problem. Can you tell me which medicine you\u2019re requesting?"
+      ],
+      "context": "prescription_refill",
+      "required_context": []
+    },
+    {
+      "tag": "provide_medication_name",
+      "patterns": [
+        "Metformin 500 mg tablets.",
+        "I need Lisinopril.",
+        "Refill for Atorvastatin 20mg.",
+        "Albuterol inhaler, please.",
+        "I\u2019d like my Omeprazole renewed.",
+        "Renew my Prozac prescription.",
+        "Hydrochlorothiazide 25 mg.",
+        "Insulin glargine refill.",
+        "Need more Synthroid.",
+        "Refill my ibuprofen 600mg.",
+        "I want to renew my Zoloft.",
+        "Please refill Advair Diskus.",
+        "Levothyroxine 75 mcg refill.",
+        "Amlodipine 10 mg, thanks.",
+        "Prednisone taper refill.",
+        "Warfarin 5 mg prescription.",
+        "Gabapentin 300 mg refill.",
+        "I need Ventolin inhaler.",
+        "Metoprolol 50mg, please.",
+        "Refill of Crestor."
+      ],
+      "responses": [
+        "Thank you. Would you like to pick up the {medication} at our pharmacy or have it mailed?",
+        "Got it\u2014{medication}. Do you prefer in\u2011person pickup or mail delivery?",
+        "Understood. Should we prepare {medication} for pharmacy pickup or mail it to you?",
+        "Refill noted for {medication}. How would you like to receive it\u2014pickup or mail?",
+        "Alright. For {medication}, do you want to collect it here or have it shipped?",
+        "Thanks\u2014{medication} added to your request. What pickup or delivery method works best?"
+      ],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "provide_pickup_preference",
+      "patterns": [
+        "I'll pick it up at the pharmacy.",
+        "Mail it to my home, please.",
+        "Pickup in person.",
+        "Can you deliver it to my address?",
+        "I'll collect it tomorrow.",
+        "Please mail the medication.",
+        "I prefer curbside pickup.",
+        "Send it to my mailing address.",
+        "I'll swing by the pharmacy.",
+        "Mail delivery works.",
+        "I'd like drive\u2011through pickup.",
+        "Ship it to me, thanks.",
+        "I'll pick it up after 3\u202fp.m.",
+        "Home delivery, please.",
+        "I\u2019ll come get it today.",
+        "Please courier it.",
+        "Pickup is fine.",
+        "Mail is easiest for me.",
+        "I'll pick it up on Friday.",
+        "Deliver to my office address."
+      ],
+      "responses": [
+        "Great\u2014your refill will be prepared for {method}. You\u2019ll receive a notification when it\u2019s ready.",
+        "Understood. We\u2019ll arrange {method} and let you know once processed.",
+        "No problem. Your prescription will be set for {method}. Expect confirmation soon.",
+        "Certainly. We\u2019ll handle the refill via {method}. Thank you.",
+        "All set. {method.capitalize()} option selected. We\u2019ll update you when it\u2019s complete.",
+        "Your preference for {method} is noted. We\u2019re processing the refill now."
+      ],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "confirm_prescription_refill",
+      "patterns": [
+        "Yes, that\u2019s perfect.",
+        "Great, thank you.",
+        "Sounds good.",
+        "Okay, please proceed.",
+        "That works for me.",
+        "Confirmed.",
+        "Sure, go ahead.",
+        "Thanks, do it.",
+        "All set, thanks.",
+        "Fine by me.",
+        "Yes, proceed with that.",
+        "Okay, thanks for arranging.",
+        "Looks good.",
+        "Yes, I agree.",
+        "Perfect, thanks."
+      ],
+      "responses": [
+        "Your prescription refill is confirmed. Expect a notification once it\u2019s ready.",
+        "Great\u2014your refill request has been submitted. We\u2019ll let you know when you can pick it up or when it ships.",
+        "All set! The pharmacy is processing your refill now.",
+        "Done. Your refill is in progress; thank you for confirming.",
+        "Confirmed. We\u2019ll notify you as soon as your medication is ready.",
+        "Refill request finalized. Let us know if you need anything else."
+      ],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "complaint_report_start",
+      "patterns": [
+        "I want to file a complaint.",
+        "I have a concern about my care.",
+        "I'd like to submit feedback about poor service.",
+        "I need to report an issue.",
+        "How do I make a formal complaint?",
+        "I\u2019m not satisfied with the treatment I received.",
+        "I want to talk to someone about a problem.",
+        "I have a complaint regarding billing.",
+        "I need to report unprofessional behavior.",
+        "I'd like to speak with patient relations.",
+        "I want to lodge a complaint about the food.",
+        "Nurse was rude\u2014I want to report it.",
+        "I need to file a grievance.",
+        "I have concerns about cleanliness.",
+        "I want to provide negative feedback.",
+        "I need to complain about wait times.",
+        "Please help me submit a complaint.",
+        "I want to express dissatisfaction.",
+        "How do I escalate an issue?",
+        "I\u2019m unhappy with the service."
+      ],
+      "responses": [
+        "I\u2019m sorry to hear that. Could you briefly describe the issue so I can direct it to the right department?",
+        "We apologize for any inconvenience. Please share details of your concern, and we\u2019ll help you escalate it.",
+        "Certainly. Let me know the nature of your complaint, and I\u2019ll start the report.",
+        "I understand. Could you tell me what happened so I can assist you properly?",
+        "We take feedback seriously. Please describe the issue, including date and staff involved if possible.",
+        "Of course. What aspect of your experience would you like to report?"
+      ],
+      "context": "complaint_report",
+      "required_context": []
+    }
+  ]
+}

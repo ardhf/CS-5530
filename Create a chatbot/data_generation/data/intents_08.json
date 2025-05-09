@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {
+      "tag": "confirm_contact_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "lost_item_report"
+      ]
+    },
+    {
+      "tag": "records_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "records_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_identification_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "records_request"
+      ]
+    },
+    {
+      "tag": "confirm_delivery_method",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "records_request"
+      ]
+    },
+    {
+      "tag": "visitor_badge_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "visitor_badge",
+      "required_context": []
+    }
+  ]
+}

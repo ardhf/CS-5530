@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "tag": "covid_protocol_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "mask_policy_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "schedule_followup_start",
+      "patterns": [],
+      "responses": [],
+      "context": "scheduling_followup",
+      "required_context": []
+    },
+    {
+      "tag": "provide_department_for_followup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "scheduling_followup"
+      ]
+    },
+    {
+      "tag": "provide_date_for_followup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "scheduling_followup"
+      ]
+    }
+  ]
+}

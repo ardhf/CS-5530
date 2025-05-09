@@ -1,0 +1,187 @@
+{
+  "intents": [
+    {
+      "tag": "provide_patient_name",
+      "patterns": [
+        "I'm here to see Maria Gonzalez.",
+        "Patient name is John Smith.",
+        "Visiting David Lee.",
+        "It's for Emily Brown.",
+        "My mother, Patricia Johnson.",
+        "I'm visiting baby Noah Davis.",
+        "Patient is Ahmed Hassan.",
+        "The name is Grace Kim.",
+        "I'm here for Mr. Robert Jones.",
+        "I need a badge for Sarah Patel.",
+        "Visiting patient Michael Chen.",
+        "Badge for Jennifer Wilson, please.",
+        "Patient: Carlos Ramirez.",
+        "I'm visiting Anna O'Connor.",
+        "Here to see grandmother, Helen Clark.",
+        "Patient name\u2014Oliver Scott.",
+        "For patient Lisa Wong.",
+        "I'm here for Tim Baker in room 402.",
+        "Badge for patient Charlotte Young.",
+        "Visiting Mr. Anthony Rivera.",
+        "I need to see Jessica Turner.",
+        "Patient called Mark Thompson.",
+        "The patient is Zoe Zhang.",
+        "Here to visit Paul Hernandez.",
+        "Patient's name is Linda Flores.",
+        "I'm here for William Parker.",
+        "Need badge for Megan Carter.",
+        "Visiting dad, George Stewart.",
+        "Patient = Sophia Martinez.",
+        "I'd like to see Kevin Nguyen."
+      ],
+      "responses": [
+        "Thank you. One moment while I locate {patient_name}'s room and finish your badge.",
+        "Got it\u2014preparing your visitor badge for {patient_name} now.",
+        "Certainly. I'll print your badge for {patient_name}.",
+        "{patient_name}\u2014understood. Please hold while I generate your visitor pass.",
+        "Thank you for the patient name. Your badge for {patient_name} will be ready shortly.",
+        "Badge request for {patient_name} noted\u2014please wait just a moment."
+      ],
+      "context": "",
+      "required_context": [
+        "visitor_badge"
+      ]
+    },
+    {
+      "tag": "confirm_badge_pickup",
+      "patterns": [
+        "Yes, I'll pick it up at the desk.",
+        "Great, I'll grab the badge now.",
+        "Okay, I'll come to reception.",
+        "Thanks, I'll get the badge.",
+        "I'll collect it right away.",
+        "Sure, heading over to pick up.",
+        "Yes, I'll pick it up shortly.",
+        "Alright, I'll be there.",
+        "Understood, I'll get the visitor pass.",
+        "I'll stop by and grab the badge.",
+        "Sounds good, picking it up.",
+        "Yep, I'll pick it up at the front.",
+        "Okay, I'll collect the badge.",
+        "I'll pick it up at security.",
+        "I'll get it from the counter."
+      ],
+      "responses": [
+        "Perfect. Your visitor badge is ready at the front desk.",
+        "Great\u2014please present your photo ID at the reception to collect the badge.",
+        "Your badge is waiting at Security. Let them know your name upon arrival.",
+        "Understood. The badge will be at the visitor kiosk for pickup.",
+        "All set. You can collect your badge any time today during visiting hours.",
+        "Thank you. We\u2019ll hold the badge at the desk for you."
+      ],
+      "context": "",
+      "required_context": [
+        "visitor_badge"
+      ]
+    },
+    {
+      "tag": "dietary_request_start",
+      "patterns": [
+        "I have a dietary restriction.",
+        "Need a special diet for my meal.",
+        "Can I request a vegetarian menu?",
+        "I require gluten\u2011free meals.",
+        "I'd like to discuss my diet needs.",
+        "Is halal food available?",
+        "I need a low\u2011sodium diet.",
+        "Can you arrange vegan meals for me?",
+        "I have a nut allergy\u2014need safe meals.",
+        "Requesting renal diet.",
+        "I need diabetic meal options.",
+        "Can you add me to the kosher menu?",
+        "I'm lactose intolerant\u2014need dairy\u2011free.",
+        "I want to set up meal accommodations.",
+        "Please note my special diet request.",
+        "Can someone help with my meal plan?",
+        "Need pureed diet after surgery.",
+        "I\u2019m on a soft foods diet.",
+        "I'd like my meals without pork.",
+        "Can I get meals fitting my cultural diet?"
+      ],
+      "responses": [
+        "Certainly. Could you tell me the specifics of your dietary needs?",
+        "Of course\u2014please describe your restriction so we can assist.",
+        "Happy to help. What type of diet do you require?",
+        "Absolutely. Let me know your dietary preference or allergy details.",
+        "Sure thing. Please provide the exact dietary restrictions you follow.",
+        "Certainly. What should we note for your meals?"
+      ],
+      "context": "dietary_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_dietary_details",
+      "patterns": [
+        "I need vegetarian meals, no meat or fish.",
+        "Gluten\u2011free only, please.",
+        "Halal diet\u2014no pork or alcohol.",
+        "Low\u2011sodium, heart\u2011healthy meals.",
+        "Diabetic diet, carb controlled.",
+        "Kosher meals only.",
+        "Vegan\u2014no animal products at all.",
+        "Nut\u2011free meals; severe allergy.",
+        "Pureed foods only.",
+        "Soft diet, nothing crunchy.",
+        "Lactose\u2011free, please.",
+        "Renal diet\u2014low potassium.",
+        "High\u2011protein meals.",
+        "Bland diet\u2014no spicy food.",
+        "No shellfish.",
+        "Low\u2011fat meals.",
+        "Pescatarian\u2014fish okay, no other meat.",
+        "Cultural Indian vegetarian diet.",
+        "Only clear liquids right now.",
+        "Food cut into small pieces."
+      ],
+      "responses": [
+        "Thank you. I've noted your request for a {diet} diet and will inform Food Services.",
+        "Understood\u2014your meals will follow the {diet} guidelines.",
+        "Got it. We\u2019ll update your meal plan to {diet}.",
+        "Your {diet} preference has been recorded with the kitchen.",
+        "Certainly. I\u2019ve forwarded your {diet} request to our dietary team.",
+        "The {diet} diet is now on file\u2014let us know if anything changes."
+      ],
+      "context": "",
+      "required_context": [
+        "dietary_request"
+      ]
+    },
+    {
+      "tag": "confirm_dietary_request",
+      "patterns": [
+        "Yes, that sounds right.",
+        "Perfect, thanks.",
+        "That's correct.",
+        "Great, thank you.",
+        "Yes, please proceed.",
+        "All good.",
+        "Sure, that works.",
+        "Okay, thanks for arranging.",
+        "Fine by me.",
+        "Yes, confirmed.",
+        "Looks good.",
+        "Alright, thanks.",
+        "Yes, that's my diet.",
+        "Confirmed, thank you.",
+        "Okay, appreciate it."
+      ],
+      "responses": [
+        "Your dietary accommodation is confirmed. Meals will be adjusted accordingly.",
+        "Great\u2014your meal plan has been updated. Let staff know if you need anything else.",
+        "All set! Food Services have your requirements on file.",
+        "Thank you for confirming. We\u2019ll ensure your meals meet the requested guidelines.",
+        "Your request is finalized. Feel free to alert us if preferences change.",
+        "Confirmed. Enjoy your upcoming meals, and let us know of any concerns."
+      ],
+      "context": "",
+      "required_context": [
+        "dietary_request"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {
+      "tag": "prescription_refill_start",
+      "patterns": [],
+      "responses": [],
+      "context": "prescription_refill",
+      "required_context": []
+    },
+    {
+      "tag": "provide_medication_name",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "provide_pickup_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "confirm_prescription_refill",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "prescription_refill"
+      ]
+    },
+    {
+      "tag": "complaint_report_start",
+      "patterns": [],
+      "responses": [],
+      "context": "complaint_report",
+      "required_context": []
+    }
+  ]
+}

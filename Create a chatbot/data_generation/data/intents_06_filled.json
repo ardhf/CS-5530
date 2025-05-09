@@ -1,0 +1,204 @@
+{
+  "intents": [
+    {
+      "tag": "confirm_followup_details",
+      "patterns": [
+        "Yes, that works for me.",
+        "Sounds good.",
+        "That date is fine.",
+        "Perfect, thank you.",
+        "Yes, please book that.",
+        "Let's do that time.",
+        "Confirmed.",
+        "Sure, that slot is okay.",
+        "Fine with me.",
+        "Yes, schedule it.",
+        "Okay, that time works.",
+        "Looks good.",
+        "I'm happy with that.",
+        "Yes, go ahead.",
+        "Great, thanks.",
+        "That appointment time is perfect.",
+        "Please confirm it.",
+        "Yes, that will do.",
+        "Alright, book it.",
+        "Yes, I agree.",
+        "Everything looks correct.",
+        "Yep, that's fine.",
+        "Ok, confirm please.",
+        "Yes, lock it in."
+      ],
+      "responses": [
+        "Your follow\u2011up has been scheduled as requested. You\u2019ll receive a confirmation text shortly.",
+        "Great! I\u2019ve booked that appointment for you. Let us know if anything changes.",
+        "All set\u2014your follow\u2011up is confirmed. We look forward to seeing you then.",
+        "The appointment is now secured. Feel free to reach out if you need to adjust it.",
+        "Confirmed! You should receive an email with the details within a few minutes.",
+        "Your booking is complete. Thank you for confirming.",
+        "Everything is arranged for your follow\u2011up. Have a great day until we see you again."
+      ],
+      "context": "",
+      "required_context": [
+        "scheduling_followup"
+      ]
+    },
+    {
+      "tag": "reschedule_appointment_start",
+      "patterns": [
+        "I need to reschedule my appointment.",
+        "Can I move my appointment to another day?",
+        "I'd like to change my appointment time.",
+        "Need to reschedule, please.",
+        "Could we push my appointment back?",
+        "I want to reschedule my visit.",
+        "Can you help me change the date of my appointment?",
+        "I have to reschedule.",
+        "Need to shift my appointment.",
+        "I'd like to move my appointment.",
+        "Please help me reschedule.",
+        "I can't make my appointment\u2014need a new time.",
+        "Can I book a different slot?",
+        "I have a conflict and need to reschedule.",
+        "Can we find another time for my appointment?",
+        "I need to change my appointment date.",
+        "Reschedule request.",
+        "Is it possible to reschedule?",
+        "I want to reschedule my consult.",
+        "I need to adjust my appointment.",
+        "I'd like a new time for my visit.",
+        "Change my appointment, please.",
+        "Could you reschedule me?",
+        "Need another appointment date."
+      ],
+      "responses": [
+        "Certainly. Could you provide the date and time of the appointment you\u2019d like to reschedule?",
+        "Sure thing\u2014what was your current appointment date and time?",
+        "I'd be happy to help. First, when is your existing appointment scheduled?",
+        "Of course. Let\u2019s start with the details of your current appointment.",
+        "No problem. Please share the original appointment date/time so I can locate it.",
+        "Absolutely. What is the appointment you wish to change?",
+        "Understood. May I have the date and time of the appointment you need to move?"
+      ],
+      "context": "reschedule_appt",
+      "required_context": []
+    },
+    {
+      "tag": "provide_old_appointment_details",
+      "patterns": [
+        "It was on May 3rd at 10\u202fa.m.",
+        "My appointment is July 12, 2\u202fp.m.",
+        "I\u2019m scheduled for 9\u202fa.m. next Monday.",
+        "The appointment is on 04/15 at noon.",
+        "May 20th at 3\u202fp.m.",
+        "It's on Tuesday at 11\u202fa.m.",
+        "Original slot was June 1st, 8\u202fa.m.",
+        "I was booked for Friday at 4\u202fp.m.",
+        "Current appointment: August 5, morning.",
+        "I'm set for 10\u202fa.m. on March 8.",
+        "Appointment date is 09/10 at 1\u202fp.m.",
+        "I'm down for April 22, 2\u202fp.m.",
+        "Existing booking is May 30 at 9\u202fa.m.",
+        "I had one on Wednesday at 3\u202fp.m.",
+        "Booked for next Thursday afternoon.",
+        "It\u2019s currently 07/07 at 10\u202fa.m.",
+        "I have an appointment on November 14 at 1\u202fp.m.",
+        "Scheduled for the 21st at 11\u202fa.m.",
+        "Had a slot on Friday morning, 9\u202fa.m.",
+        "Mine is April 10th at 2\u202fp.m.",
+        "Old appointment: June 18 at 3\u202fp.m.",
+        "Existing time was 8\u202fa.m. tomorrow.",
+        "Original booking: Sept 2, midday.",
+        "Currently set for Oct 1st, evening."
+      ],
+      "responses": [
+        "Thank you. What new date or time works best for you?",
+        "Got it. When would you like to reschedule to?",
+        "Understood. Please provide your preferred new appointment timeframe.",
+        "Noted. What day or time would suit you better?",
+        "Okay\u2014let me know your new preferred date and time.",
+        "Great. What\u2019s your ideal reschedule window?",
+        "Thanks for the details. When should we move the appointment to?"
+      ],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    },
+    {
+      "tag": "provide_new_time_preference",
+      "patterns": [
+        "Next Friday morning.",
+        "Any time after 3\u202fp.m. on July 8.",
+        "The week of August 10 is good.",
+        "How about June 30 at 11\u202fa.m.?",
+        "Late afternoon on Monday works.",
+        "Earliest slot next Wednesday.",
+        "Prefer the first week of October.",
+        "Can we do 9\u202fa.m. on April 25?",
+        "End of the month, please.",
+        "Any morning after 10\u202fa.m.",
+        "Late next Thursday.",
+        "Sometime on March 2, afternoon.",
+        "July 15th around noon.",
+        "Next available friday.",
+        "Second week of November.",
+        "Midday on May 12.",
+        "Early morning slot Tuesday.",
+        "After 4\u202fp.m. any day.",
+        "June 5, earliest you have.",
+        "Next Tuesday at 2\u202fp.m."
+      ],
+      "responses": [
+        "Let me check availability for that slot\u2014one moment.",
+        "I\u2019ll see if we have openings then and confirm shortly.",
+        "Checking our calendar now; I\u2019ll get back with the closest match.",
+        "Understood. Please hold while I look for an appointment on that date/time.",
+        "I\u2019m reviewing the schedule to secure that slot for you.",
+        "One moment while I verify and reserve the next available time that meets your request.",
+        "Got it. I\u2019ll find the best available match and update you soon."
+      ],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    },
+    {
+      "tag": "confirm_reschedule_details",
+      "patterns": [
+        "Yes, that new time works.",
+        "Perfect, thanks.",
+        "That date is good.",
+        "Sounds great.",
+        "Okay, please book it.",
+        "Confirmed\u2014let\u2019s do that.",
+        "Yes, reschedule to that slot.",
+        "Fine with me.",
+        "Sure, go ahead.",
+        "Great, make it official.",
+        "Yes, confirm the new appointment.",
+        "Looks good to me.",
+        "Alright, lock it in.",
+        "That works.",
+        "Yes, please confirm.",
+        "All set, thanks.",
+        "I agree to that time.",
+        "Okay, schedule me then.",
+        "Yes, let's go with that.",
+        "Everything correct\u2014thanks."
+      ],
+      "responses": [
+        "Your appointment has been successfully rescheduled. A confirmation has been sent to your email.",
+        "Done! The new appointment is secured. Let us know if you need further changes.",
+        "All set\u2014your appointment has been moved. We\u2019ll send a reminder 24\u202fhours beforehand.",
+        "The reschedule is confirmed. Thank you for updating us.",
+        "Great! Your new appointment details are in the system. We look forward to seeing you.",
+        "Your appointment has been updated. Feel free to reach out if anything else comes up.",
+        "Confirmed and saved. Have a great day, and we\u2019ll see you at your new time."
+      ],
+      "context": "",
+      "required_context": [
+        "reschedule_appt"
+      ]
+    }
+  ]
+}

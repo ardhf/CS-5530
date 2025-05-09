@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "find_oncology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_nicu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_cardiology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_neurology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_laboratory",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    }
+  ]
+}

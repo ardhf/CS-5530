@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "find_gift_shop",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "visiting_hours_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "parking_information",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "wheelchair_access_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "lost_and_found_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    }
+  ]
+}

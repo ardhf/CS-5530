@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "find_icu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_radiology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_emergency_department",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_cafeteria",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_pharmacy",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    }
+  ]
+}

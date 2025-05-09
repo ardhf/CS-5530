@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "find_patient_admission",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_ambulatory_surgery",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_physical_therapy",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "wifi_access_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "cafeteria_menu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "intents": [
+    {
+      "tag": "find_icu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_radiology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_emergency_department",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_cafeteria",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_pharmacy",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_gift_shop",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "visiting_hours_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "parking_information",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "wheelchair_access_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "lost_and_found_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "page_nurse",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "contact_doctor",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "emergency_deferral",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_maternity",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_pediatrics",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_oncology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_nicu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_cardiology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_neurology",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_laboratory",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_patient_admission",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_ambulatory_surgery",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_physical_therapy",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "wifi_access_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "cafeteria_menu",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "covid_protocol_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "mask_policy_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "schedule_followup_start",
+      "patterns": [],
+      "responses": [],
+      "context": "scheduling_followup",
+      "required_context": []
+    },
+    {
+      "tag": "provide_department_for_followup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["scheduling_followup"]
+    },
+    {
+      "tag": "provide_date_for_followup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["scheduling_followup"]
+    },
+    {
+      "tag": "confirm_followup_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["scheduling_followup"]
+    },
+    {
+      "tag": "reschedule_appointment_start",
+      "patterns": [],
+      "responses": [],
+      "context": "reschedule_appt",
+      "required_context": []
+    },
+    {
+      "tag": "provide_old_appointment_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["reschedule_appt"]
+    },
+    {
+      "tag": "provide_new_time_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["reschedule_appt"]
+    },
+    {
+      "tag": "confirm_reschedule_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["reschedule_appt"]
+    },
+    {
+      "tag": "interpreter_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "interpreter_service",
+      "required_context": []
+    },
+    {
+      "tag": "provide_language_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["interpreter_service"]
+    },
+    {
+      "tag": "confirm_interpreter_request",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["interpreter_service"]
+    },
+    {
+      "tag": "lost_item_report_start",
+      "patterns": [],
+      "responses": [],
+      "context": "lost_item_report",
+      "required_context": []
+    },
+    {
+      "tag": "provide_item_description",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["lost_item_report"]
+    },
+    {
+      "tag": "confirm_contact_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["lost_item_report"]
+    },
+    {
+      "tag": "records_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "records_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_identification_info",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["records_request"]
+    },
+    {
+      "tag": "confirm_delivery_method",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["records_request"]
+    },
+    {
+      "tag": "visitor_badge_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "visitor_badge",
+      "required_context": []
+    },
+    {
+      "tag": "provide_patient_name",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["visitor_badge"]
+    },
+    {
+      "tag": "confirm_badge_pickup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["visitor_badge"]
+    },
+    {
+      "tag": "dietary_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "dietary_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_dietary_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["dietary_request"]
+    },
+    {
+      "tag": "confirm_dietary_request",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["dietary_request"]
+    },
+    {
+      "tag": "prescription_refill_start",
+      "patterns": [],
+      "responses": [],
+      "context": "prescription_refill",
+      "required_context": []
+    },
+    {
+      "tag": "provide_medication_name",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["prescription_refill"]
+    },
+    {
+      "tag": "provide_pickup_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["prescription_refill"]
+    },
+    {
+      "tag": "confirm_prescription_refill",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["prescription_refill"]
+    },
+    {
+      "tag": "complaint_report_start",
+      "patterns": [],
+      "responses": [],
+      "context": "complaint_report",
+      "required_context": []
+    },
+    {
+      "tag": "provide_complaint_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["complaint_report"]
+    },
+    {
+      "tag": "confirm_complaint_submission",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["complaint_report"]
+    },
+    {
+      "tag": "parking_validation_start",
+      "patterns": [],
+      "responses": [],
+      "context": "parking_validation",
+      "required_context": []
+    },
+    {
+      "tag": "provide_parking_ticket_number",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["parking_validation"]
+    },
+    {
+      "tag": "confirm_parking_validation",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": ["parking_validation"]
+    }
+  ]
+}

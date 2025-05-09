@@ -1,0 +1,191 @@
+{
+  "intents": [
+    {
+      "tag": "confirm_contact_info",
+      "patterns": [
+        "Sure, my phone number is 555\u20111234.",
+        "You can reach me at john.doe@example.com.",
+        "Yes, call me at 312\u2011555\u20117790.",
+        "Here's my cell: 970\u2011555\u20112211.",
+        "My email is maria90@gmail.com.",
+        "Contact number 404\u2011555\u20118770.",
+        "Yes, that's the correct address.",
+        "You can mail me at 145 Oak Street, Springfield.",
+        "Phone: (210) 555\u20113489.",
+        "Email: lee_chan@provider.net.",
+        "My name is Sarah Ruiz and my number is 555\u20116677.",
+        "Send updates to samuel.h@outlook.com.",
+        "Address is 890 Birch Ave, Apt 4B.",
+        "Please text me at 571\u2011555\u20111001.",
+        "Yes, use the email on my patient file.",
+        "Correct\u2014my phone ends in 8833.",
+        "Mail it to PO Box 112, Boulder, CO.",
+        "Reach me at 646\u2011555\u20119080 after 5\u202fp.m.",
+        "My contact info hasn't changed.",
+        "Yes, that phone number is fine.",
+        "Use my work email: a.patel@company.com.",
+        "Here\u2019s my updated phone: 555\u20112121.",
+        "You can call my spouse at 555\u20119090.",
+        "I'd prefer email contact.",
+        "Yes, please update my address to 23 Elm Road."
+      ],
+      "responses": [
+        "Thank you\u2014I've added that contact information to your lost\u2011item report.",
+        "Got it. Your contact details are now on file; we\u2019ll reach out if the item is found.",
+        "Perfect. I\u2019ve updated the report with your contact info.",
+        "Your details are recorded. Security will notify you with any updates.",
+        "Thank you for confirming. We\u2019ll be in touch once there\u2019s news.",
+        "Information received. Let us know if anything changes.",
+        "Contact info saved successfully. We appreciate your patience while we search."
+      ],
+      "context": "",
+      "required_context": [
+        "lost_item_report"
+      ]
+    },
+    {
+      "tag": "records_request_start",
+      "patterns": [
+        "I need a copy of my medical records.",
+        "How do I request my hospital records?",
+        "I'd like to get my health records.",
+        "Can I obtain my discharge summary?",
+        "I want my lab results mailed to me.",
+        "I\u2019m requesting my medical file.",
+        "Need to access my records for insurance.",
+        "Can you help me get my radiology images?",
+        "I'd like to request my child\u2019s records.",
+        "How do I request past visit notes?",
+        "I need records for my primary doctor.",
+        "Can I get a copy of my vaccination history?",
+        "I need medical records for legal reasons.",
+        "Requesting my treatment history.",
+        "I want to see my surgery report.",
+        "How do I request all my records electronically?",
+        "I need my billing records too.",
+        "I'd like to authorize someone to collect my records.",
+        "Need my prenatal records, please.",
+        "Can you guide me on medical record requests?"
+      ],
+      "responses": [
+        "Certainly. To start your request, could you provide a form of identification?",
+        "I'd be happy to help. May I have a photo ID or patient number to locate your records?",
+        "Of course. For privacy, we\u2019ll first verify your identity\u2014could you share your ID details?",
+        "No problem. Let\u2019s begin by confirming your identity. What identification will you use?",
+        "Absolutely. Please provide your full name, date of birth, and any ID number for verification.",
+        "Sure thing. I\u2019ll need to verify your identity before processing the records request."
+      ],
+      "context": "records_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_identification_info",
+      "patterns": [
+        "My name is David Chen, DOB 03/14/1985, MRN 987654.",
+        "Jane Smith, born 12\u201122\u20111990, driver\u2019s license A1234567.",
+        "Patient number 556677, John O'Neil, 05/05/72.",
+        "It's Maria Lopez, 09/09/1978.",
+        "ID: passport P987654321, name Ahmed Khan.",
+        "Emily Brown, 02/02/2000, MRN 112233.",
+        "Driver license B7654321, Mark Lee, 07/15/88.",
+        "Patient ID 445566, Lucy Liu.",
+        "DOB 11\u201111\u20111995, name Peter Park.",
+        "Sam Wilson, MRN 334455, birthday 01/30/83.",
+        "Passport number X1234567, Zoe Zhang.",
+        "Patient #778899, Alan King.",
+        "Name: Grace Kim, 06\u201106\u20111992.",
+        "MRN 221100, Roberta Diaz.",
+        "License C3456789, Tyler Green.",
+        "Isaac White, born 08/18/79.",
+        "Patient ID 998877, Nina Patel.",
+        "Oscar Ruiz, 10\u201110\u20111968, driver\u2019s license D9876543.",
+        "Sarah Lee, MRN 667788.",
+        "Passport Q7654321, Hana Yoon."
+      ],
+      "responses": [
+        "Thank you for verifying your identity. How would you like us to deliver the records\u2014pick\u2011up, mail, or secure email?",
+        "Identity confirmed. Please let me know your preferred delivery method: in\u2011person pick\u2011up, postal mail, or encrypted email.",
+        "Great, your ID is verified. Which delivery option would you like us to use?",
+        "All set. Would you prefer to collect the records here, have them mailed, or sent electronically?",
+        "Verification complete. How should we deliver your records?",
+        "Thanks. Let me know whether you want the records mailed, emailed, or picked up in person."
+      ],
+      "context": "",
+      "required_context": [
+        "records_request"
+      ]
+    },
+    {
+      "tag": "confirm_delivery_method",
+      "patterns": [
+        "Please mail them to my home address.",
+        "I'd like to pick them up in person.",
+        "Send via secure email, please.",
+        "Mail is fine.",
+        "Email works best.",
+        "I will come and collect them.",
+        "Can you mail them to my doctor?",
+        "Please email the PDF copy.",
+        "I'd prefer postal delivery.",
+        "I'll pick them up next week.",
+        "Send them electronically to my inbox.",
+        "I want them mailed to my PO Box.",
+        "Email to john.doe@example.com.",
+        "Pick\u2011up at records office, thanks.",
+        "Mail to 123 Maple St, Suite 4.",
+        "Secure email, please ensure encryption.",
+        "Send by mail\u2014no rush.",
+        "I'll drop by Friday to pick up.",
+        "Mail a hard copy, please.",
+        "Email link to download records."
+      ],
+      "responses": [
+        "Understood. We will prepare your records for {method}. You\u2019ll be notified when they\u2019re ready.",
+        "Got it\u2014your records will be delivered via {method}. Expect confirmation soon.",
+        "Certainly. We\u2019ll process the request and {method} the records once complete.",
+        "No problem. Your records will be sent through {method}. Please allow up to 7\u202fbusiness days.",
+        "We\u2019ll arrange {method}. Let us know if you have additional questions.",
+        "Your delivery preference\u2014{method}\u2014has been recorded. Thank you."
+      ],
+      "context": "",
+      "required_context": [
+        "records_request"
+      ]
+    },
+    {
+      "tag": "visitor_badge_request_start",
+      "patterns": [
+        "I need a visitor badge.",
+        "How do I get a visitor pass?",
+        "I'm here to visit a patient\u2014where do I get a badge?",
+        "Can I have a visitor badge, please?",
+        "I\u2019m visiting and need a badge.",
+        "Where do I sign in for a visitor pass?",
+        "Need a badge to visit my mom.",
+        "Visitor pass request.",
+        "I'm here for a visit\u2014do I get a badge?",
+        "Help me get a visitor ID.",
+        "Where do I get a badge to see a patient?",
+        "Can you issue me a visitor sticker?",
+        "I\u2019m visiting ICU, need a badge.",
+        "Need to pick up a visitor pass.",
+        "How do I get a badge for visiting hours?",
+        "Please provide a visitor badge.",
+        "Where can I collect a visitor tag?",
+        "I must sign in as a visitor.",
+        "Visitor ID card request.",
+        "Is there a badge for visitors?"
+      ],
+      "responses": [
+        "Certainly. Please provide the patient\u2019s name and your photo ID, and we\u2019ll print your visitor badge.",
+        "Of course. May I have the patient\u2019s name and your identification to issue the badge?",
+        "Happy to help. We\u2019ll need a valid photo ID and the patient\u2019s full name to create your visitor pass.",
+        "Sure thing. To get your visitor badge, please show your ID and let me know the patient you\u2019re visiting.",
+        "No problem. Once you provide your ID and the patient\u2019s name, we\u2019ll prepare your badge.",
+        "Absolutely. Please present a government\u2011issued ID; I\u2019ll print your visitor sticker right away."
+      ],
+      "context": "visitor_badge",
+      "required_context": []
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey",
+        "Hi, can you help me?",
+        "Is this the nurse station?",
+        "Good morning",
+        "Yo",
+        "Hello there"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time",
+        "Talk to you later",
+        "Catch you later",
+        "I'm done for now",
+        "Bye for now",
+        "Later!"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "Thanks a lot",
+        "Appreciate it",
+        "Cheers",
+        "That was great, thank you",
+        "You're the best"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, I didn't understand that.",
+        "Could you please rephrase your question?",
+        "Not sure I understand. Can you give me more details?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered",
+        "What services do you offer?",
+        "How can you assist me?",
+        "Tell me how you can help",
+        "What modules can I use?",
+        "List the things you can do"
+      ],
+      "responses": [
+        "I can help you with adverse drug reaction info, blood pressure tracking, department directions, visiting hours, and nurse requests."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "adverse_drug",
+      "patterns": [
+        "How to check Adverse drug reaction?",
+        "Open adverse drugs module",
+        "Give me a list of drugs causing adverse behavior",
+        "List all drugs suitable for patient with adverse reaction",
+        "Which drugs don't have adverse reactions?"
+      ],
+      "responses": [
+        "Navigating to the adverse drug reaction module."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Open blood pressure module",
+        "Task related to blood pressure",
+        "Blood pressure data entry",
+        "I want to log blood pressure results",
+        "Blood pressure data management"
+      ],
+      "responses": [
+        "Navigating to the blood pressure module."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "blood_pressure_search",
+      "patterns": [
+        "I want to search for blood pressure result history",
+        "Blood pressure for patient",
+        "Load patient blood pressure result",
+        "Show blood pressure results for patient",
+        "Find blood pressure results by ID",
+        "Can I see past blood pressure readings?",
+        "Search BP history",
+        "Get previous BP results",
+        "Look up BP records",
+        "History of blood pressure for patient"
+      ],
+      "responses": [
+        "Please provide the patient ID.",
+        "Patient ID, please?"
+      ],
+      "context": [
+        "search_blood_pressure_by_patient_id"
+      ]
+    },
+    {
+      "tag": "search_blood_pressure_by_patient_id",
+      "patterns": [],
+      "responses": [
+        "Loading blood pressure results for the patient."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "pharmacy_info",
+      "patterns": [
+        "Where is the hospital pharmacy?",
+        "Locate the pharmacy",
+        "I need to go to the pharmacy",
+        "Is the pharmacy open?",
+        "Find pharmacy in this hospital"
+      ],
+      "responses": [
+        "The hospital pharmacy is located on the ground floor near the main entrance. It's open from 8 AM to 6 PM."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "hospital_info",
+      "patterns": [
+        "Where is cardiology?",
+        "Tell me about hospital departments",
+        "Where is the lab?",
+        "How do I get to radiology?",
+        "Where is patient admissions?"
+      ],
+      "responses": [
+        "You can find department information at the main information desk or I can help guide you. Which department are you looking for?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "visiting_hours",
+      "patterns": [
+        "What are the visiting hours?",
+        "When can I visit a patient?",
+        "Is visiting allowed now?",
+        "What time can I see someone?",
+        "Until what time are visits allowed?"
+      ],
+      "responses": [
+        "Visiting hours are from 10 AM to 8 PM daily.",
+        "You can visit between 10 in the morning and 8 in the evening.",
+        "Visitors are welcome from 10:00 AM to 8:00 PM."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "nurse_request",
+      "patterns": [
+        "I need a nurse",
+        "Can you call a nurse?",
+        "Please send a nurse to my room",
+        "I need help from a nurse",
+        "Requesting a nurse"
+      ],
+      "responses": [
+        "A nurse has been notified and will be with you shortly.",
+        "Hang tight, we're notifying the nurse.",
+        "We'll send someone to assist you soon."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "department_directions",
+      "patterns": [
+        "Where is the x-ray department?",
+        "How do I get to radiology?",
+        "Can you direct me to cardiology?",
+        "Where is pediatrics located?",
+        "I need to go to the lab",
+        "Where's x-ray at?",
+        "I gotta get to the lab",
+        "Point me toward cardiology",
+        "Where's the kids' wing?",
+        "How do I get to imaging?"
+      ],
+      "responses": [
+        "Sure, which department are you looking for?",
+        "Please tell me the department name and I can help with directions."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "facility_locations",
+      "patterns": [
+        "Where is the cafeteria?",
+        "Is there a bathroom nearby?",
+        "How do I find the elevators?",
+        "Where is the waiting area?",
+        "I need to find a vending machine",
+        "Where's the bathroom at?",
+        "How do I get to snacks?",
+        "Where's the food court?",
+        "Got any vending around here?",
+        "Where can I grab a coffee?"
+      ],
+      "responses": [
+        "The cafeteria is on the first floor near the main entrance. Bathrooms and elevators are marked throughout the hospital.",
+        "Sure, I can help with that. What facility are you looking for?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "wheelchair_request",
+      "patterns": [
+        "Can I get a wheelchair?",
+        "I need a wheelchair",
+        "Do you have any wheelchairs available?",
+        "Where can I request a wheelchair?",
+        "Help me get a wheelchair please",
+        "Can I get one of them wheelchairs?",
+        "Y'all got a wheelchair I can use?",
+        "I need some wheels to get around",
+        "Can someone bring a wheelchair?",
+        "Help me get moving, please"
+      ],
+      "responses": [
+        "A nurse has been notified to assist you with a wheelchair.",
+        "We'll have a wheelchair brought to your location shortly."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "lab_results",
+      "patterns": [
+        "Are my lab results ready?",
+        "When will I get lab results?",
+        "Can I check my test results?",
+        "I'm waiting on blood test results",
+        "Any update on my lab work?",
+        "Got my lab results yet?",
+        "They done with my blood work?",
+        "Heard anything about my test?",
+        "Any word on those labs?",
+        "Are my labs back?"
+      ],
+      "responses": [
+        "Please check with your assigned nurse or doctor for lab results, as I can't access patient records directly.",
+        "You'll be notified by staff when your results are ready."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "find_patient_room",
+      "patterns": [
+        "What room is John Smith in?",
+        "Where can I find my friend who was admitted?",
+        "Can you tell me the room number for my cousin?",
+        "Which room is my family member in?",
+        "I want to visit a patient, where are they?",
+        "Where'd they put John Smith?",
+        "I'm tryna find my buddy who got admitted",
+        "What room's my cousin in?",
+        "Any idea where my aunt is staying?",
+        "Where'd y'all move my friend to?"
+      ],
+      "responses": [
+        "Please check with the front desk or provide the patient's full name so we can assist you further.",
+        "For privacy reasons, room information is provided at the front desk with proper identification."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "visitor_department_location",
+      "patterns": [
+        "Where is the maternity ward?",
+        "How do I get to intensive care?",
+        "I'm looking for the emergency department",
+        "Where can I find the surgery wing?",
+        "Show me how to get to neurology",
+        "Where y'all keep the ER?",
+        "How do I get to the baby ward?",
+        "Where they do surgeries at?",
+        "Point me to ICU?",
+        "Where's the neuro place?"
+      ],
+      "responses": [
+        "You can find department locations at the main information desk, or I can help guide you. Which department are you visiting?",
+        "Please follow hospital signage or ask the front desk if you need more detailed directions."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "visitor_checkin",
+      "patterns": [
+        "How do I check in as a visitor?",
+        "Do I need to sign in to visit someone?",
+        "Where is the visitor check-in?",
+        "Is there a visitor badge?",
+        "Do I need to register before visiting a patient?",
+        "Do I gotta check in first?",
+        "Where do I sign in to see someone?",
+        "I'm here to visit, what do I do?",
+        "Y'all got visitor passes?",
+        "Do I need a badge to go in?"
+      ],
+      "responses": [
+        "Yes, please check in at the front desk when you arrive. Visitor badges are usually required.",
+        "Visitor check-in is located at the main entrance. A staff member will help you from there."
+      ],
+      "context": [
+        ""
+      ]
+    }
+  ]
+}

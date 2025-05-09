@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "tag": "provide_patient_name",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "visitor_badge"
+      ]
+    },
+    {
+      "tag": "confirm_badge_pickup",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "visitor_badge"
+      ]
+    },
+    {
+      "tag": "dietary_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "dietary_request",
+      "required_context": []
+    },
+    {
+      "tag": "provide_dietary_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "dietary_request"
+      ]
+    },
+    {
+      "tag": "confirm_dietary_request",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "dietary_request"
+      ]
+    }
+  ]
+}

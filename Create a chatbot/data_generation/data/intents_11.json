@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "tag": "provide_complaint_details",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "complaint_report"
+      ]
+    },
+    {
+      "tag": "confirm_complaint_submission",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "complaint_report"
+      ]
+    },
+    {
+      "tag": "parking_validation_start",
+      "patterns": [],
+      "responses": [],
+      "context": "parking_validation",
+      "required_context": []
+    },
+    {
+      "tag": "provide_parking_ticket_number",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "parking_validation"
+      ]
+    },
+    {
+      "tag": "confirm_parking_validation",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "parking_validation"
+      ]
+    }
+  ]
+}

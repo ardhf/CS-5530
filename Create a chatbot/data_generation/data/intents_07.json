@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {
+      "tag": "interpreter_request_start",
+      "patterns": [],
+      "responses": [],
+      "context": "interpreter_service",
+      "required_context": []
+    },
+    {
+      "tag": "provide_language_preference",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "interpreter_service"
+      ]
+    },
+    {
+      "tag": "confirm_interpreter_request",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "interpreter_service"
+      ]
+    },
+    {
+      "tag": "lost_item_report_start",
+      "patterns": [],
+      "responses": [],
+      "context": "lost_item_report",
+      "required_context": []
+    },
+    {
+      "tag": "provide_item_description",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": [
+        "lost_item_report"
+      ]
+    }
+  ]
+}

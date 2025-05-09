@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "page_nurse",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "contact_doctor",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "emergency_deferral",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_maternity",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    },
+    {
+      "tag": "find_pediatrics",
+      "patterns": [],
+      "responses": [],
+      "context": "",
+      "required_context": []
+    }
+  ]
+}

@@ -9,3 +9,10 @@ https://drive.google.com/drive/folders/1At7fosDvUSospZ7MK5XEM2pbVlq2v22x?usp=dri
 
 ## Running the Final Model
 To run the final model you need the ```fine_tuned_model.pth``` file from the Google Drive link. Put this file in your Google Colab file storage and run the final cell in the notebook (Labeled with ```Inference on Model```). This will run the model without the classifier. If you wish to use the classifier you need to change ```enable_classifier``` to True in the ```Inference on Model``` cell, and then run all of the cells under the ```Classifier``` heading in the notebook. Then you will be able to run the ```Inference on Model``` cell and get output with the classifier.
+
+## Files and Authors
+Chatbot with Transformer - Rohan<br>
+Chatterbot - Jim<br>
+data_generation - Daniel<br>
+ChatbotFromScratch_Final - Alex<br>
+data folder - data for the final model

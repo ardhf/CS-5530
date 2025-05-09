@@ -16,3 +16,6 @@ Chatterbot - Jim<br>
 data_generation - Daniel<br>
 ChatbotFromScratch_Final - Alex<br>
 data folder - data for the final model
+
+## Source Code
+This is all of the source code produced for this project, although only the ChatbotFromScratch_Final.ipynb file was used for inference with the final model.
